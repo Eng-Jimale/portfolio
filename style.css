@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.head, footer {
+    background-color: #1c133d;
+    color: white !important;
+}
+
+h3 {
+    color: #20c6f8;
+}
+
+.banner {
+    margin-left: 500px;
+    width: 400px;
+    padding-bottom: 30px;
+    padding-top: 100px;
+}
+
+.banner img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px #20c6f8;
+}
+
+span {
+    color: #20c6f8;
+}
+
+.techpref {
+    margin-left: 500px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.techgrid {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 15px;
+    width: 500px;
+    box-shadow: 2px 2px 5px wheat;
+}
+
+.techgrid img {
+    width: 30px;
+    height: 30px;
+}
+
+.projects {
+    width: 600px;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+.gridpro {
+    width: 300px;
+    height: 320px;
+    background-color: #1c133d;
+    border-radius: 10px;
+}
+
+.proimg img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 80px;
+    box-shadow: 2px 2px 5px #20c6f8;
+}
+
+.prodesc {
+    margin: 0px 10px;
+    font-size: 13px;
+}
+
+.coreproject {
+    margin-left: 500px;
+    margin-top: 50px;
+    color: #20c6f8;
+    font-weight: normal;
+}
+
+.techpref h1 {
+    color: #20c6f8;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.medialinks {
+    margin-left: 500px;
+    margin-top: 150px;
+}
+
+/* Large screens (desktops, laptops) */
+@media (min-width: 1024px) {
+    /* Adjustments for large screens can go here if needed */
+}
+
+/* Medium screens (tablets, small laptops) */
+@media (min-width: 700px) and (max-width: 1023px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner{
+        width: 100%;
+    }
+}
+
+/* Small screens (phones, small tablets) */
+@media (max-width: 699px) {
+    .banner {
+        margin-left: 0;
+        padding-top: 20px;
+        width: 100%;
+        text-align: center;
+       
+        
+    }
+
+    .banner img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .techpref, .projects {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .techgrid {
+        width: 100%;
+    }
+
+    .coreproject {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .gridpro {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    .proimg img {
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .medialinks {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .medialinks a {
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
